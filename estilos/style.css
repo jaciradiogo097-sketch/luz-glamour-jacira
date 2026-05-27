@@ -1,0 +1,305 @@
+:root {
+    --pink: #F8C1D3;
+    --deep-pink: #C15B7E;
+    --rose: #E89EB8;
+    --dark: #2C1F24;
+    --light: #FFF8F9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+}
+/* TOP BAR FIXA */
+.top-bar {
+    background: linear-gradient(to right, var(--light), #f0a9c2);
+    color: white;
+    font-weight: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    margin-bottom: 0;
+}
+
+/* NAVBAR FIXA */
+.navbar {
+    background-color: var(--light);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 40px;           /* Altura da top bar */
+    left: 0;
+    width: 100%;
+    z-index: 1020;
+    padding: 12px 0;
+    margin-top: 0;
+}
+
+.hero {
+    margin-top: 130px;   /* Ajuste conforme necessário */
+    padding-top: 20px;
+}
+
+/* Logo no Navbar */
+.logo-img {
+    height: 55px;
+    width: auto;
+}
+.nav-link {
+    color: var(--dark);
+    font-weight: 500;
+    margin: 0 8px;
+}
+
+.nav-link active {
+    color: var(--deep-pink);
+}
+.nav-link:hover {
+    color: var(--deep-pink);
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)), 
+                url('../imagens/banner.jpeg') 100% / 100% auto no-repeat;
+    min-height: 90vh;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
+/* =================== TÍTULO PRODUTOS EM DESTAQUE =================== */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #2C1F24;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: 10px auto;
+    padding-bottom: 25px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #E8A8B8, transparent);
+}
+
+.section-title::before {
+    content: '♡';
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.9rem;
+    color: #E8A8B8;
+    background: white;
+    padding: 0 18px;
+}
+
+/* ==================== CARDS - TAMANHO PROFISSIONAL ==================== */
+.product-card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(232, 168, 184, 0.15);
+    transition: all 0.4s ease;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(232, 168, 184, 0.25);
+}
+
+.product-card img {
+    height: 260px;           /* Tamanho profissional */
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.08);
+}
+
+.product-card .card-body {
+    padding: 20px 15px;
+}
+
+.product-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 0.95rem;
+    color: #666;
+    min-height: 48px;
+}
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(193, 91, 126, 0.2);
+}
+
+/* Sale Section */
+.sale-section {
+    background: linear-gradient(135deg, #F8C1D3, #E89EB8);
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--deep-pink);
+    border: none;
+}
+
+.product-card .btn-link {
+    color: #E8A8B8;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.product-card .btn-link:hover {
+    color: #D46A8F;
+}
+
+.btn-primary:hover {
+    background-color: #a14a68;
+}
+
+/* SALE SECTION - Com Imagem de Fundo */
+.sale-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                url('../imagens/sale-banner.png') center/cover no-repeat;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.sale-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(193, 91, 126, 0.25); /* tom rosa suave por cima */
+    z-index: 1;
+}
+
+.sale-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.sale-section h2 {
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.sale-section h1 {
+    font-size: 4.5rem;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+/* BENEFÍCIOS - Ícone à esquerda */
+.text-pink {
+    color: #E8A8B8 !important;
+}
+
+.d-flex i {
+    transition: transform 0.3s ease;
+}
+
+.d-flex:hover i {
+    transform: scale(1.15);
+}
+/* Ajuste de responsividade para bordas divisórias */
+@media (min-width: 768px) {
+    .border-start-md {
+        border-left: 1px solid #f1f3f5 !important;
+    }
+}
+
+/* Cartões das Áreas de Atuação (Saúde, Tech, etc.) */
+.skill-card {
+    background-color: #FFF8F9;
+    border: 1px solid #F8C1D3;
+    transition: all 0.3s ease;
+}
+.skill-card:hover {
+    transform: translateY(-4px);
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(193, 91, 126, 0.15);
+}
+.text-mini {
+    font-size: 0.75rem;
+}
+
+/* Círculos das Redes Sociais semelhantes aos logos da imagem */
+.social-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+.target-social:hover .social-circle {
+    transform: scale(1.1);
+}
+.instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.facebook { background-color: #3b5998; }
+.tiktok { background-color: #000000; }
+
+/* Logo no Footer - Mesmo tamanho do Menu */
+.logo-footer {
+    height: 120px;   
+    width: auto;
+    filter: brightness(1.1);
+}
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--deep-pink);
+}
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .d-flex {
+        justify-content: center;
+        text-align: center;
+    }
+    .d-flex i {
+        margin-bottom: 15px;
+        margin-right: 0 !important;
+    }
+    .logo-footer {
+        height: 48px;
+    }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luz e Glamour | Salão de Beleza</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Favincon -->
+     <link rel="shortcut icon" href="imagens/logo_.png" type="image">
+    
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <div class="logo">
+                    <img src="imagens/logo.png" alt="logo">
+
+                </div>
+                <a class="navbar-brand fw-bold fs-3" href="index.html">
+                    <span class="text-gold">Luz</span> & <span class="text-gold">Glamour</span>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">INÍCIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">PRODUTOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">MAQUIAGEM</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">CABELO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactos.html">PERFUMES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="autores.html">PROMOÇÕES</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER / HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="display-3 fw-bold">LUZ E GLAMOUR</h1>
+            <p class="lead fs-3">O auge da Beleza</p>
+            <div class="mt-4">
+                <a href="servicos.html" class="btn btn-gold btn-lg me-3">Ver Produtos & Serviços</a>
+                <a href="contactos.html" class="btn btn-outline-light btn-lg">Agendar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS EM DESTAQUE -->
+    <section class="py-5" style="background-color: #f8f1eb;">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5">Produtos e Serviços em Destaque</h2>
+            
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card">
+                        <img src="imagens/maquiagem_1.jpeg" class="card-img-top" alt="Cabelo">
+                        <div class="card-body">
+                            <h5 class="card-title">Tratamento Capilar Premium</h5>
+                            <p class="card-text">Hidratação profunda com óleos essenciais.</p>
+                            <p class="price">€65,00</p>
+                            <a href="detalhes.html?id=1" class="btn btn-sm btn-gold">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card">
+                        <img src="imagens/brincos e aneis.jpeg" class="card-img-top" alt="Facial">
+                        <div class="card-body">
+                            <h5 class="card-title">Spray de Brilho Olive Oil - Beesoul</h5>
+                            <p class="card-text">​O toque final para um cabelo radiante.</p>
+                            <p class="price">10,00€</p>
+                            <a href="detalhes.html?id=2" class="btn btn-sm btn-gold">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card">
+                        <img src="imagens/maquiagem_3.jpeg" class="card-img-top" alt="Manicure">
+                        <div class="card-body">
+                            <h5 class="card-title">Gel Wax IKT</h5>
+                            <p class="card-text">Mantenha cada fio no lugar com a Gel Wax IKT. Ideal para finalizar tranças.</p>
+                            <p class="price">7,50€</p>
+                            <a href="detalhes.html?id=3" class="btn btn-sm btn-gold">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card">
+                        <img src="imagens/cabelo_1.jpeg" class="card-img-top" alt="Massagem">
+                        <div class="card-body">
+                            <h5 class="card-title">Tesoura Profissional de Precisão - DLH</h5>
+                            <p class="card-text">​Corte limpo e precisão absoluta.</p>
+                            <p class="price">​Preço: 4,50€</p>
+                            <a href="detalhes.html?id=4" class="btn btn-sm btn-gold">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORQUE ESCOLHER-NOS -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Porque escolher Luz e Glamour?</h2>
+            <div class="row text-center g-5">
+                <div class="col-md-3">
+                    <i class="fas fa-spa fa-3x text-gold mb-3"></i>
+                    <h5>Ambiente Exclusivo</h5>
+                    <p>Espaço moderno e acolhedor</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-star fa-3x text-gold mb-3"></i>
+                    <h5>Produtos Premium</h5>
+                    <p>Marcas de alta qualidade</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-users fa-3x text-gold mb-3"></i>
+                    <h5>Profissionais Qualificados</h5>
+                    <p>Equipa especializada</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-clock fa-3x text-gold mb-3"></i>
+                    <h5>Atendimento Personalizado</h5>
+                    <p>Cada cliente é único</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <img src="imagens/logo_.png" alt="logo">
+                </div>
+                <div class="col-md-4">
+                    <h5>Luz e Glamour</h5>
+                    <p>Transformamos a sua beleza em luz.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="servicos.html" class="text-light">Serviços</a></li>
+                        <li><a href="sobre.html" class="text-light">Sobre Nós</a></li>
+                        <li><a href="contactos.html" class="text-light">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contactos</h5>
+                    <p><i class="fas fa-phone"></i> +351 928 355 598</p>
+                    <p><i class="fas fa-envelope"></i> info@luzeglamour.pt</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2026 Luz e Glamour. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
